@@ -13,7 +13,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   const getProductRequest = async (search) => {
-    const url = `http://localhost:8000/product?search=${search}`;
+    const url = `https://product-api-11.herokuapp.com/product?search=${search}`;
     const reponse = await fetch(url);
     const resJSON = await reponse.json();
 
